@@ -1,0 +1,8 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <div>
+        <a class="btn btn-primary me-2" href="{% url 'order-list' %}">Orders</a>
+        <a class="btn btn-primary me-2" href="{% url 'order-add' %}">Add order</a>
+    </div>
+{% endblock %}

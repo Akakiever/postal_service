@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <div>
+      <div scope="row">Number: {{ order.foreign_id }}</div>
+      <div>Location from: {{ order.location_from }}</div>
+      <div>Location to: {{ order.location_to }}</div>
+      <div>Status: {{ order.status }}</div>
+      <div>Datetime created: {{ order.datetime_created }}</div>
+      <div>Datetime changed: {{ order.datetime_changed }}</div>
+    </div>
+{% endblock %}
